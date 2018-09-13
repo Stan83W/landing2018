@@ -2,9 +2,19 @@
 title: Stanislas Wiart | Branding | UI Design | Web Development
 ---
 
+<div class="annoying-marquee" >
+  <h1 class="marquee3k"><span class="banner-text">- Branding - Art Direction - Digital Design - Web Development</span></h1>
+</div>
 
 <div class="mycontainer">
   <% data.projects.each do |project| %>
     <h1><%= project.number %><%= project.name %></h1>
   <% end %>
 </div>
+
+
+
+<script src="javascripts/marquee3k.js"></script>
+<script>
+  Marquee3k.init()
+</script>
