@@ -8,7 +8,7 @@ title: Stanislas Wiart | Branding | UI Design | Web Development
 
 <div class="mycontainer">
   <% data.projects.each do |project| %>
-    <h1><%= project.number %><%= project.name %></h1>
+    <h1><%= project.number %> ― <%= project.name %> <sup> <%= project.date %></sup></h1>
   <% end %>
 </div>
 
