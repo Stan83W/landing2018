@@ -2,14 +2,9 @@
 title: Stanislas Wiart | Branding | UI Design | Web Development
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%#= image_tag "logo.png", width: "200" %>
-    <p>
-      New website soon
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+
+<div class="mycontainer">
+  <% data.projects.each do |project| %>
+    <h1><%= project.number %><%= project.name %></h1>
+  <% end %>
 </div>
